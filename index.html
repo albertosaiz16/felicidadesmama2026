@@ -20,7 +20,7 @@
     <!-- PANTALLA 1 -->
     <section id="homeScreen" class="screen active">
       <div class="mobile-card">
-        <div class="hero-image-wrap">
+        <div class="hero-image-wrap portrait-frame hero-frame">
           <img
             src="assets/mama_home.png"
             alt="Imagen principal del regalo para mamá"
@@ -41,7 +41,7 @@
               <legend>Elige una opción</legend>
 
               <label class="radio-card">
-                <input type="radio" name="match" value="op1" checked />
+                <input type="radio" name="match" value="op3" checked />
                 <span class="radio-ui"></span>
                 <span class="radio-content">
                   <span class="radio-title">Estrella Roja</span>
@@ -50,7 +50,7 @@
               </label>
 
               <label class="radio-card">
-                <input type="radio" name="match" value="op2" />
+                <input type="radio" name="match" value="op1" />
                 <span class="radio-ui"></span>
                 <span class="radio-content">
                   <span class="radio-title">Valencia Basket</span>
@@ -59,7 +59,7 @@
               </label>
 
               <label class="radio-card">
-                <input type="radio" name="match" value="op3" />
+                <input type="radio" name="match" value="op2" />
                 <span class="radio-ui"></span>
                 <span class="radio-content">
                   <span class="radio-title">Anadolu Efes</span>
@@ -71,7 +71,7 @@
         </div>
 
         <div class="preview-card">
-          <div class="preview-image-wrap">
+          <div class="preview-image-wrap portrait-frame option-frame">
             <img
               id="previewImage"
               src="assets/mama_op1.png"
@@ -97,14 +97,6 @@
                 <span class="info-icon">📍</span>
                 <span id="matchVenue">Movistar Arena</span>
               </div>
-              <div class="info-item">
-                <span class="info-icon">💎</span>
-                <span id="matchPrice">VIP desde 200 €</span>
-              </div>
-              <div class="info-item">
-                <span class="info-icon">🎟️</span>
-                <span id="matchGeneral">Entradas aforo general disponibles próximamente</span>
-              </div>
             </div>
 
             <button id="selectButton" type="button" class="primary-button">
@@ -126,7 +118,7 @@
           </p>
         </div>
 
-        <div class="result-image-wrap">
+        <div class="result-image-wrap portrait-frame option-frame">
           <img
             id="resultImage"
             src="assets/mama_op1.png"
@@ -140,11 +132,9 @@
           <p id="resultCompetition">Euroliga · Jornada 38</p>
           <p id="resultDate">Jueves, 16 abr · 20:45 h</p>
           <p id="resultVenue">Movistar Arena</p>
-          <p id="resultPrice">VIP desde 200 €</p>
-          <p id="resultGeneral">Entradas aforo general disponibles próximamente</p>
         </div>
 
-        <div class="family-block">
+        <div class="family-block family-frame">
           <img
             src="assets/mama_outrophoto.png"
             alt="Foto final de la familia"

@@ -1,30 +1,24 @@
 const matches = {
-  op1: {
+  op3: {
     title: "Real Madrid vs Estrella Roja",
     competition: "Euroliga · Jornada 38",
     date: "Jueves, 16 abr · 20:45 h",
     venue: "Movistar Arena",
-    price: "VIP desde 200 €",
-    general: "Entradas aforo general disponibles próximamente",
-    image: "assets/mama_op1.png"
+    image: "assets/mama_op3.png"
   },
-  op2: {
+  op1: {
     title: "Real Madrid vs Valencia Basket",
     competition: "Euroliga · Jornada 31",
     date: "Jueves, 12 mar · 20:45 h",
     venue: "Movistar Arena",
-    price: "VIP desde 220 €",
-    general: "Aforo general desde 19 €",
-    image: "assets/mama_op2.png"
+    image: "assets/mama_op1.png"
   },
-  op3: {
+  op2: {
     title: "Real Madrid vs Anadolu Efes",
     competition: "Euroliga · Jornada 34",
     date: "Jueves, 26 mar · 20:45 h",
     venue: "Movistar Arena",
-    price: "VIP desde 200 €",
-    general: "Aforo general desde 18 €",
-    image: "assets/mama_op3.png"
+    image: "assets/mama_op2.png"
   }
 };
 
@@ -39,16 +33,12 @@ const matchTitle = document.getElementById("matchTitle");
 const matchCompetition = document.getElementById("matchCompetition");
 const matchDate = document.getElementById("matchDate");
 const matchVenue = document.getElementById("matchVenue");
-const matchPrice = document.getElementById("matchPrice");
-const matchGeneral = document.getElementById("matchGeneral");
 
 const resultImage = document.getElementById("resultImage");
 const resultTitle = document.getElementById("resultTitle");
 const resultCompetition = document.getElementById("resultCompetition");
 const resultDate = document.getElementById("resultDate");
 const resultVenue = document.getElementById("resultVenue");
-const resultPrice = document.getElementById("resultPrice");
-const resultGeneral = document.getElementById("resultGeneral");
 
 function getSelectedMatchKey() {
   const selected = document.querySelector('input[name="match"]:checked');
@@ -65,8 +55,6 @@ function updatePreview(matchKey) {
   matchCompetition.textContent = selectedMatch.competition;
   matchDate.textContent = selectedMatch.date;
   matchVenue.textContent = selectedMatch.venue;
-  matchPrice.textContent = selectedMatch.price;
-  matchGeneral.textContent = selectedMatch.general;
 }
 
 function updateResult(matchKey) {
@@ -79,8 +67,6 @@ function updateResult(matchKey) {
   resultCompetition.textContent = selectedMatch.competition;
   resultDate.textContent = selectedMatch.date;
   resultVenue.textContent = selectedMatch.venue;
-  resultPrice.textContent = selectedMatch.price;
-  resultGeneral.textContent = selectedMatch.general;
 }
 
 matchForm.addEventListener("change", () => {
