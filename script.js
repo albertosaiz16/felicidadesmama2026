@@ -34,7 +34,6 @@ const matchForm = document.getElementById("matchForm");
 const selectButton = document.getElementById("selectButton");
 const backButton = document.getElementById("backButton");
 
-// Preview
 const previewImage = document.getElementById("previewImage");
 const matchTitle = document.getElementById("matchTitle");
 const matchCompetition = document.getElementById("matchCompetition");
@@ -43,7 +42,6 @@ const matchVenue = document.getElementById("matchVenue");
 const matchPrice = document.getElementById("matchPrice");
 const matchGeneral = document.getElementById("matchGeneral");
 
-// Result
 const resultImage = document.getElementById("resultImage");
 const resultTitle = document.getElementById("resultTitle");
 const resultCompetition = document.getElementById("resultCompetition");
@@ -107,5 +105,4 @@ backButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// Estado inicial
 updatePreview(getSelectedMatchKey());
