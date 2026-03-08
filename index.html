@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felicidades, mamá</title>
+  <meta name="description" content="Regalo sorpresa para Merce" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <main class="app">
+    <!-- PANTALLA 1 -->
+    <section id="homeScreen" class="screen active">
+      <div class="hero-card">
+        <div class="hero-image-wrap">
+          <img
+            src="assets/mama_home.png"
+            alt="Imagen principal del regalo para mamá"
+            class="hero-image"
+          />
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Un regalo para Merce</p>
+          <h1>Felicidades, mamá</h1>
+          <p class="intro-text">
+            Tenemos preparada una sorpresa muy chula:
+            unas entradas para ver al <strong>Real Madrid</strong> en
+            <strong>Euroliga</strong> en el <strong>Movistar Arena</strong>.
+            Solo falta elegir el partido.
+          </p>
+
+          <form id="matchForm" class="options-form">
+            <fieldset>
+              <legend>Elige una opción</legend>
+
+              <label class="radio-card">
+                <input type="radio" name="match" value="op1" checked />
+                <span class="radio-ui"></span>
+                <span class="radio-content">
+                  <span class="radio-title">Real Madrid vs Estrella Roja</span>
+                  <span class="radio-subtitle">Jornada 38 · Jueves, 16 abr · 20:45 h</span>
+                </span>
+              </label>
+
+              <label class="radio-card">
+                <input type="radio" name="match" value="op2" />
+                <span class="radio-ui"></span>
+                <span class="radio-content">
+                  <span class="radio-title">Real Madrid vs Valencia Basket</span>
+                  <span class="radio-subtitle">Jornada 31 · Jueves, 12 mar · 20:45 h</span>
+                </span>
+              </label>
+
+              <label class="radio-card">
+                <input type="radio" name="match" value="op3" />
+                <span class="radio-ui"></span>
+                <span class="radio-content">
+                  <span class="radio-title">Real Madrid vs Anadolu Efes</span>
+                  <span class="radio-subtitle">Jornada 34 · Jueves, 26 mar · 20:45 h</span>
+                </span>
+              </label>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+      <div class="preview-card">
+        <div class="preview-image-wrap">
+          <img
+            id="previewImage"
+            src="assets/mama_op1.png"
+            alt="Vista previa de la opción seleccionada"
+            class="preview-image"
+          />
+        </div>
+
+        <div class="match-info">
+          <p class="preview-label">Partido seleccionado</p>
+          <h2 id="matchTitle">Real Madrid vs Estrella Roja</h2>
+
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-icon">🏀</span>
+              <span id="matchCompetition">Euroliga · Jornada 38</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📅</span>
+              <span id="matchDate">Jueves, 16 abr · 20:45 h</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <span id="matchVenue">Movistar Arena</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">💎</span>
+              <span id="matchPrice">VIP desde 200 €</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🎟️</span>
+              <span id="matchGeneral">Entradas aforo general disponibles próximamente</span>
+            </div>
+          </div>
+
+          <button id="selectButton" class="primary-button">
+            Seleccionar
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANTALLA 2 -->
+    <section id="resultScreen" class="screen">
+      <div class="result-card">
+        <p class="eyebrow">Regalo elegido</p>
+        <h2>¡Enhorabuena, mamá!</h2>
+        <p class="result-text">
+          Ya está elegido el partido para disfrutar de una noche muy especial.
+        </p>
+
+        <div class="result-selected">
+          <div class="result-main-image-wrap">
+            <img
+              id="resultImage"
+              src="assets/mama_op1.png"
+              alt="Imagen de la opción seleccionada"
+              class="result-main-image"
+            />
+          </div>
+
+          <div class="result-info-box">
+            <h3 id="resultTitle">Real Madrid vs Estrella Roja</h3>
+            <p id="resultCompetition">Euroliga · Jornada 38</p>
+            <p id="resultDate">Jueves, 16 abr · 20:45 h</p>
+            <p id="resultVenue">Movistar Arena</p>
+            <p id="resultPrice">VIP desde 200 €</p>
+            <p id="resultGeneral">Entradas aforo general disponibles próximamente</p>
+          </div>
+        </div>
+
+        <div class="family-block">
+          <img
+            src="assets/mama_outrophoto.png"
+            alt="Foto final de la familia"
+            class="family-image"
+          />
+        </div>
+
+        <button id="backButton" class="secondary-button">
+          Volver a elegir
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
